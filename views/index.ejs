@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Youtube to MP3 Converter</title>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+    </ul>
+  </div>
+  <div class="top-container">
+    <form action="/convert-mp3" method="POST" id="form">
+        <h1><i class="fab fa-youtube"></i>Youtube To MP3 Converter</h1>
+        <h4>Masukan URL dari Youtube</h4>
+        <div>
+            <input type="text" name="videoID" placeholder="  Paste Link Di Sini..."><button
+            id="convert-btn">Convert</button>
+        </div>
+    </form>
+  </div>
+  <div class="bottom-container">
+    <% if(typeof success != "undefined" && success) { %>
+        <div class="success">
+            <p><%= song_title %></p>
+            <a href="<%= song_link %> "><button id="donwload-btn">DOWNLOAD</button></a>
+        </div>
+    <% } else if(typeof success != "undefined" && !success) { %>
+            <div class="errors">
+                <p><%= message %></p>
+            </div>
+    <% } %>
+  </div>
+  <br><br><br><br>
+		<footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+			</div>
+			<div class="footer-left">
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</p>
+				<p>ViznaCorp &copy; 2022</p>
+			</div>
+		</footer>
+</body>
+</html>
