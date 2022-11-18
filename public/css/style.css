@@ -38,7 +38,10 @@
 } 
 .top-container {
     text-align: center;
-    padding: 100px;
+    padding: 150px;
+    padding-inline-start: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 30px;
     border: 2px solid #000000;
     border-radius: 15px;
@@ -61,8 +64,8 @@ button{
     overflow: hidden;
 }
 input{
-    align-items: center;
-    width: 500px;
+    text-align: center;
+    width: 300px;
     height: 35px;
     border-radius: 25px;
     text-align: center;
@@ -100,6 +103,7 @@ section {
   text-align: left;
   font: normal 16px sans-serif;
   padding: 30px 50px;
+  padding-bottom: 10px;
 }
 
 .footer-distributed .footer-left p {
@@ -159,7 +163,8 @@ section {
   transition:all .25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed .footer-right a:hover
+{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
