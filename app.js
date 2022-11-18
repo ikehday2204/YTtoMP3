@@ -50,6 +50,14 @@ app.post("/convert-mp3", async (req, res) => {
     }
 });
 
+app.get("/berita", (req,res) => {
+    res.render("berita")
+})
+app.get("/tentang-kami", (req,res) => {
+    res.render("berita")
+})
+
+
 //start the server
 app.listen(PORT, () => {
     console.log('Server started on port ${PORT}');
